@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.jetbrains', name: 'annotations', version: '17.0.0'
+
+    compile group: 'org.eclipse.jetty', name: 'jetty-server', version: '9.4.19.v20190610'
+    compile group: 'org.eclipse.jetty', name: 'jetty-servlet', version: '9.4.19.v20190610'
+    compile group: 'org.eclipse.jetty', name: 'jetty-servlets', version: '9.4.19.v20190610'
+
+    compile group: 'com.google.inject', name: 'guice', version: '4.2.2'
+    compile group: 'com.google.inject.extensions', name: 'guice-servlet', version: '4.2.2'
+
+    compile group: 'org.glassfish.hk2', name: 'guice-bridge', version: '2.6.0'
+
+    compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
+
+//    compile group: 'org.glassfish.jersey.core', name: 'jersey-server', version: '2.29'
+    compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-servlet', version: '2.29'
+    compile group: 'org.glassfish.jersey.inject', name: 'jersey-hk2', version: '2.29'
+    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-jaxb', version: '2.29'
+    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.29'
+    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-multipart', version: '2.29'
+
+
+//    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.9'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.9.3'
+
+    compile group: 'org.jboss.resteasy', name: 'resteasy-guice', version: '4.2.0.Final'
+    compile group: 'org.jboss.resteasy', name: 'resteasy-jackson2-provider', version: '4.2.0.Final'
+
+//    compile group: 'com.fasterxml.jackson.jaxrs', name: 'jackson-jaxrs-json-provider', version: '2.9.9'
+}
